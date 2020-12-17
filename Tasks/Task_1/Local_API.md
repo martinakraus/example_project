@@ -1,17 +1,9 @@
 # Load data from local API
 1. Start our HTTP-Server bookmonkey-api in your shell
-2. Import the HttpClientModule in your AppModule.
-3. Inject HttpClient via constructor(private http: HttpClient) in BookData
-4. Load data from local API in BookData service via http.get(URL)
+2. Load data from local API in BookData service via http.get(URL)
+3. Don't forget to unsubscribe
 
 ## Hints
-
-`import {HttpClientModule} from "@angular/common/http";`
-
-```
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
-```
 
 `return this.http.get<Book[]>('http://localhost:4730/books')`
 
