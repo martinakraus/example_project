@@ -1,0 +1,8 @@
+<div *ngIf="books; else noBooks">
+  <app-book-row *ngFor="let bookItem of books" [book]="bookItem">
+  </app-book-row>
+</div>
+
+<ng-template #noBooks>
+  <h4>These are not the books you are looking for</h4>
+</ng-template>

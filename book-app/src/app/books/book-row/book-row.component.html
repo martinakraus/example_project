@@ -1,0 +1,6 @@
+<div *ngIf="book">
+    <div> {{ book.title }} </div>
+    <div> {{ book.subtitle }} </div>
+
+    <button [routerLink]="['/books', book.isbn]">Show detail</button>
+</div>
